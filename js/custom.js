@@ -29,14 +29,23 @@ $(document).ready(function(){
 			console.log('done scrolling');
 		}
 	});
-	
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 400) {
-            $("#navigation").css("background-color","#f7c704");
-        } else {
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 400){  
+            $("#navigation").css("background-color","rgba(41, 49, 10, 0.397)");
+          }
+          else{
             $("#navigation").css("background-color","rgba(16, 22, 54, 0.2)");
-        }
-    });
+          }
+        });
+	
+    // $(window).scroll(function () {
+    //     if ($(window).scrollTop() > 400) {
+    //         $("#navigation").css("background-color","#f7c704");
+    //     } else {
+    //         $("#navigation").css("background-color","rgba(16, 22, 54, 0.2)");
+    //     }
+    // });
 	
 	/* ========================================================================= */
 	/*	Fix Slider Height
